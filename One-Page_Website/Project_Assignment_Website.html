@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./CSS/one_page_website.css">
+	<head>
+		<title>Funny Pets</title>
+	</head>
+	<body>	
+		<!-- NAV -->
+			<div class="menu-container">
+				<div class="menu">
+					<ul class="selection">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contacts"><li>SUBSCRIBE</li></a>
+					</ul>
+				</div>
+			</div>
+	
+		<!-- NAV END -->
+	
+		
+		<!-- HOME -->
+		<div id="home">
+			<div class="text-center">
+				<span class="head-main">Funny Pets</span>
+			
+				<div class="head-sub">
+					<p>I am fond of pigs. An animal's eyes have the power to speak a great language. A dog is the only thing on earth that loves you more than you love yourself. Dogs are better than human beings because they know but do not tell. Cats are intended to teach us that not everything in nature has a function.</p>
+
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- PICTURES -->
+		<section>
+			<h1>GALLERY</h1>
+			<div id="gallery">
+				<div class="row">
+					<div class="column">
+						<img src="./pictures/png/pic_1.png" style="width: 100%" 
+						onclick="openModal(); currentSlide(1)" class="hover-shadow cursor">
+					</div>
+
+					<div class="column">
+						<img src="./pictures/png/pic_2.png" style="width: 100%"
+						onclick="openModal(); currentSlide(2)" class="hover-shadow cursor">
+					</div>
+
+					<div class="column">
+						<img src="./pictures/png/pic_3.png" style="width: 100%"
+						onclick="openModal(); currentSlide(3)" class="hover-shadow cursor">
+					</div>
+
+				</div>
+
+				<div class="row_2">
+					<div class="column">
+						<img src="./pictures/png/pic_4.png" style="width: 100%"
+						onclick="openModal(); currentSlide(4)" class="hover-shadow cursor">
+					</div>
+
+					<div class="column">
+						<img src="./pictures/png/pic_5.png" style="width: 100%"
+						onclick="openModal(); currentSlide(5)" class="hover-shadow cursor">
+					</div>
+
+					<div class="column">
+						<img src="./pictures/png/pic_6.png" style="width: 100%"
+						onclick="openModal(); currentSlide(6)" class="hover-shadow cursor">
+					</div>
+
+				</div>
+
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="./pictures/png/pic_1.png" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="./pictures/png/pic_2.png" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="./pictures/png/pic_3.png" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="./pictures/png/pic_4.png" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="./pictures/png/pic_5.png" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="./pictures/png/pic_6.png" style="width: 100%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<div class="column">
+							<img class="demo cursor" src="./pictures/png/pic_1.png" 
+							style="width: 100%" onclick="currentSlide(1)" alt="">
+						</div>
+
+						<div class="column">
+							<img class="demo cursor" src="pictures/png/pic_2.png"
+							style="width: 100%" onclick="currentSlide(2)" alt="">
+						</div>
+
+						<div class="column">
+							<img class="demo cursor" src="./pictures/png/pic_3.png"
+							style="width: 100%" onclick="currentSlide(3)" alt="">
+						</div>
+
+						<div class="column">
+							<img class="demo cursor" src="./pictures/png/pic_4.png"
+							style="width: 100%" onclick="currentSlide(4)" alt="">
+						</div>
+
+						<div class="column">
+							<img class="demo cursor" src="./pictures/png/pic_5.png"
+							style="width: 100%" onclick="currentSlide(5)" alt="">
+						</div>
+
+						<div class="column">
+							<img class="demo cursor" src="./pictures/png/pic_6.png"
+							style="width: 100%" onclick="currentSlide(6)" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END PICTURES -->
+		
+		<!-- VIDEOS -->
+		<section>
+			
+				<h1>Funny videos of pets!</h1>
+			
+			<div id="videos">
+				<div style="text-align: center;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/bzZEH_5OuIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<a href="https://www.youtube.com/watch?v=a51JiI8OxmU" target="new"><h2>More Funny Pet Video</h1></a>
+			</div>
+		<!-- END VIDEOS -->
+			
+		<!-- SUBSCRIBE -->
+		<div id="contacts">
+			<div class="container">
+				<div class="subscribe">	
+					<div class="form">
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="" placeholder="First Name">
+							<input class="rsvp" type="text" value="" placeholder="Last Name">
+							<input class="rsvp" type="text" value="" placeholder="Email Address">
+							<input class="rsvp" type="text" value="" placeholder="Phone Number">
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+	
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- END SUBSCRIBE -->
+
+		<script src="./JS/one_page_website.js"></script>
+
+	</body>
+		<style>
+			h5{
+			text-align: right;
+			}
+		</style>
+	<footer>
+		<h5>&copy; 2019</h5>
+	</footer>
+	
+</html>
+					
+					
